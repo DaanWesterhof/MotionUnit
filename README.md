@@ -36,6 +36,7 @@ mpu.reset_chip();
 while(true){  
   // print the results, this function will return the angle of the x-axis.  
   hwlib::cout << int(mpu.get_x_ACC()) << "\n";  
-}```  
+}
+```  
 
 
