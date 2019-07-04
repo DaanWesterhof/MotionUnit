@@ -23,8 +23,9 @@ Installation
   
  
 Preview Code
-----
-`
+----  
+
+`  
 auto sda = hwlib::target::pin_oc(hwlib::target::pins::sda1);  
 auto scl = hwlib::target::pin_oc(hwlib::target::pins::scl1);  
 auto i2c_bus = hwlib::i2c_bus_bit_banged_sda_scl(sda, scl);  
@@ -37,6 +38,6 @@ while(true){
   // print the results, this function will return the angle of the x-axis.  
   hwlib::cout << int(mpu.get_x_ACC()) << "\n";  
 }  
-`
+`  
 
 
