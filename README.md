@@ -25,18 +25,18 @@ Installation
 Preview Code
 ----
 `
-auto sda = hwlib::target::pin_oc(hwlib::target::pins::sda1);
-auto scl = hwlib::target::pin_oc(hwlib::target::pins::scl1);
-auto i2c_bus = hwlib::i2c_bus_bit_banged_sda_scl(sda, scl);
-auto mpu = mpu60x0(i2c_bus, 0x68);
-
-// used to get the chip out of sleep mode when powered on
-mpu.reset_chip();
-
-while(true){
-  // print the results, this function will return the angle of the x-axis.
-  hwlib::cout << int(mpu.get_x_ACC()) << "\n";
-}
+auto sda = hwlib::target::pin_oc(hwlib::target::pins::sda1);  
+auto scl = hwlib::target::pin_oc(hwlib::target::pins::scl1);  
+auto i2c_bus = hwlib::i2c_bus_bit_banged_sda_scl(sda, scl);  
+auto mpu = mpu60x0(i2c_bus, 0x68);  
+  
+// used to get the chip out of sleep mode when powered on  
+mpu.reset_chip();  
+  
+while(true){  
+  // print the results, this function will return the angle of the x-axis.  
+  hwlib::cout << int(mpu.get_x_ACC()) << "\n";  
+}  
 `
 
 
