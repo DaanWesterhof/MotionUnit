@@ -14,7 +14,8 @@ At the time of writing there are 2 sensors implemented, the mpu60x0 series and t
 
 Dependencies
 -----
-- For abstraction of communication with microcontrollers, this library uses [hwlib](http://github.com/wovo/hwlib) for it's hardware specific pins and wait functions. 
+- This library uses [hwlib](http://github.com/wovo/hwlib) for the hardware i2c communication
+- This library uses  for the spi communication.
 
 Installation
 -----
