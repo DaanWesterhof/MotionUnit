@@ -18,7 +18,7 @@ Dependencies
 
 Installation
 -----
-- Download the library `cd ~; git clone http://github.com/daanwesterhof/MotionUnit`
+- Download the library `cd ~; git clone http://github.com/DaanWesterhof/MotionUnit`
 - Make sure that [hwlib](http://github.com/wovo/hwlib) is installed in the home directory.
   
  
