@@ -16,6 +16,8 @@
 
 #include <cmath>
 
+namespace MUNIT{
+
     /**
      * @class MotionUnit
      * @author Daan Westerhof
@@ -801,6 +803,19 @@ public:
          */
     void enable_fifo_GYRZ(const bool set);
 
+
+
+
+        /**
+         * @brief enable bypass mode
+         * 
+         * when this is enabled the i2c master is able to directly acces the chips
+            connected to the mpu's auxilirary i2c bus
+         * @param set true or false(enable or disable)
+         */
+    void enable_bypass_mode(const bool set);
+
+
         /**
          * @brief enable i2c slave
          * 
@@ -1126,5 +1141,5 @@ public:
     
 };
 
-
-#endif //NEOLIB
+}
+#endif //MOTIONUNIT_LIB
