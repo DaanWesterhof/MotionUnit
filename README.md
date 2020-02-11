@@ -1,5 +1,8 @@
 
 # MotionUnit
+I made this library for my ipass (year one final project) with only half a year of c++ experience.
+This library isnt the best thing I have made. It works 'ok' but the coding isnt great and i will probably improve this later.
+
 
 Accelerometer/ Gyroscope library
 ============================
@@ -11,6 +14,8 @@ The last class can be used to create a virtual gyrometer out of a accelerometer 
 The library is structured this way that you can connect either I2C chips or SPI chips. 
 
 At the time of writing there are 2 sensors implemented, the mpu60x0 series and the l3g4200d. 
+
+
 
 Dependencies
 -----
